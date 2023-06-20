@@ -6,10 +6,10 @@ A comprehensive SDC constraints *viewer* and *generator*. Constraints are someti
 
 
 ### Installation Notes
-TODO
+*TODO*
 
 ### Bugs
-
+*TODO*
 
 ### Implementation Plan
 - Include verilogtree as a submodule in this project to determine the logical hierarchy.
@@ -30,6 +30,8 @@ TODO
 - When the 'generate new constraints' button is clicked on, give a summary of which constraints are changing, for example, input delay on pin RESET changing *from* 20ns *to* 25ns, or something like that. Highlight in red and green.
 
 - Include a 'sanity check' button, that once pressed performs a host of checks on the design with the current constraints. Are all input/output delays less than a clock cycle? Are all N*multicycle paths <= N*clock cycles? Does every input signal that goes into an always statement have an associated input delay (otherwise it's unconstrained)? Does every output signal from an always statement have an associated output delay (otherwise it's unconstrained)? Does every flowthrough signal have an associated input AND output delay (otherwise it's unconstrained)?
+
+- include a save/config file so a project can be opened up quickly and easily. The config file could be in JSON format, since there is probably existing C++ infrastructure to parse/write JSON already. It's also easy to edit by hand if need be. Interesting discussion here on this topic: https://github.com/gtkwave/gtkwave/issues/209
 
 - false paths, multi-cycle paths etc
 
