@@ -1,6 +1,6 @@
 # GTKconstraints
 
-A comprehensive SDC constraints *viewer* and *generator*. Constraints are sometimes to visualise and can often be the cause of Silicon bugs, visualise them first with **gtkconstraints**! 
+A comprehensive SDC constraints *viewer* and *generator*. Constraints are hard to visualise and can often be the cause of Silicon bugs, visualise them first with **gtkconstraints**! 
 
 ### Usage
 
@@ -33,7 +33,7 @@ A comprehensive SDC constraints *viewer* and *generator*. Constraints are someti
 
 - include a save/config file so a project can be opened up quickly and easily. The config file could be in JSON format, since there is probably existing C++ infrastructure to parse/write JSON already. It's also easy to edit by hand if need be. Interesting discussion here on this topic: https://github.com/gtkwave/gtkwave/issues/209
 - I think for now, the scope of the project needs to be slightly expanded... it seems like it is currently a lot of effort for something that doesn't really do a whole lot... Constraints generation is great and all, but just entering parameters and then printing this out to a text file seems quite basic for an entire standalone GUI environment. So, maybe gear this project into an entire frontend-oriented ASIC meta design tool that shows various aspects and breakdowns of an RTL design. Could include the entire SDC constraint viewing+generation functionality, alongside a breakdown of the structure of the RTL (give a chart that displays the distribution of logic per module, break down how many registers per module, what else??? Does any of this seem useful???
-- Alternatively, changing my mind a little, just double down on the SDC constraints project and make sure it's a really solid tool with lots of good features (rather than being a jack of all trades, implementing random features that no one needs or cares about). Clicking on a Verilog module in the hierarchy tree could open up a text pane that can take mouseover events to popup an information box displaying the constraints applied to the signal (if any). 
+- Alternatively, changing my mind a little, just double down on the SDC constraints project and make sure it's a really solid tool with lots of good features (rather than being a jack of all trades, implementing random features that no one needs or cares about). Clicking on a Verilog module in the hierarchy tree could open up a text pane that can take mouseover events to popup an information box displaying the constraints applied to the signal (if any). Come up with a succinct featurelist, list out a good selection of baseline features. Need some smoking-gun features.
 
 - false paths, multi-cycle paths etc
 
