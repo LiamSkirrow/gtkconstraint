@@ -1,6 +1,6 @@
-# GTKconstraints
+# GTKconstraint
 
-A comprehensive SDC constraints *viewer* and *generator*. Constraints are hard to visualise and can often be the cause of Silicon bugs, visualise them first with **gtkconstraints**! 
+A comprehensive Verilog browser and SDC constraints generator. Constraints are hard to visualise and can often be the cause of Silicon bugs, visualise them first with **gtkconstraint**! 
 
 ### Usage
 
@@ -38,7 +38,7 @@ A comprehensive SDC constraints *viewer* and *generator*. Constraints are hard t
 - false paths, multi-cycle paths etc
 
 
-### TODO/Features
+### TODO
 - Convert the notes in this README into GitHub issues 
-- should the Verilog supplied be syntactically correct? Could include verilator to compile the code and check for syntax? Alternatively, just don't worry about syntax checking and tell the user that there is the expectation for the Verilog to be clean.
+- Use Verilator to compile the code and ensure it's syntax clean. Then generate an xml dump of the design, to be parsed to generate the internal data structures to represent the design. Look into existing XML parsers, would save a lot of time if I don't have to make my own from scratch in C++. Also look into existing general text processing/parsing repos or libraries for the SDC parsing. 
 - write out a config file (essentially a save file of the paths to the loaded verilog/SDC) so the project can be opened up again quickly.
